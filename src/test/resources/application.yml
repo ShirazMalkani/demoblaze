@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: shafarm
+  server:
+    port: 8080
+
+login:
+  username: ShirazMalkani
+  password: ShirazMalkani
+  invalid:
+    username: abc
+    password: abc
+
+url:
+  login: https://www.ishopping.pk/
+
