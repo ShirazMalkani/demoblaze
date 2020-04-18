@@ -19,17 +19,7 @@ target/
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
-
+target
 
 src/main/resources/application.properties
 src/main/resources/application.yml

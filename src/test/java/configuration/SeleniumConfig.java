@@ -33,8 +33,9 @@ public class SeleniumConfig {
         // [1584195551.689][SEVERE]: Timed out receiving message from renderer: 0.100
 //        options.addArguments("--headless");
         options.setExperimentalOption("useAutomationExtension", false);
-        options.addArguments("start-maximized");                                        // open Browser in maximized mode
-        options.addArguments("disable-infobars");                                       // disabling infobars
+//        options.addArguments("start-maximized");                                        // open Browser in maximized mode
+        options.addArguments("--disable-infobars");                                       // disabling infobars
+        options.addArguments("--disable-browser-side-navigation");                                       // disabling
         options.addArguments("--disable-extensions");                                   // disabling extensions
         options.addArguments("--disable-gpu");                                          // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage");                                // overcome limited resource problems
