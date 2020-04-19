@@ -47,7 +47,7 @@ public class SeleniumConfig {
     }
 
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\alish\\Downloads\\maju\\Testing and automation\\project + asgns\\chromiumdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
 //        System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));
     }
 

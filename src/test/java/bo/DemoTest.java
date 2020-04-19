@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-@Slf4j
+@Slf4j // logging
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class DemoTest {
