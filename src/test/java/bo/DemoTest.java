@@ -1,8 +1,10 @@
 package bo;
 
 import configuration.SeleniumConfig;
+import dal.ShirazTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.*;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,6 +21,7 @@ import static org.junit.Assert.assertEquals;
 
 @Slf4j
 @SpringBootTest
+@Category(ShirazTest.class)
 @RunWith(SpringRunner.class)
 public class DemoTest {
 
