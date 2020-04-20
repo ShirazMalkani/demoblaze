@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83904566-4956-4664-98e6-07c27339a8ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="83904566-4956-4664-98e6-07c27339a8ad" name="Default Changelist" comment="local chrome driver added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bo/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bo/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/SeleniumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/SeleniumConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bo/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bo/DemoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,22 @@
       <recent name="C:\Users\alish\Downloads\maju\Testing and automation\project + asgns\demoblaze\src\test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DemoTest">
+    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bo" />
+      <option name="MAIN_CLASS_NAME" value="bo.DemoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoTest.demotest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <extension name="coverage">
@@ -88,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTest" />
         <item itemvalue="JUnit.DemoTest.demotest" />
       </list>
     </recent_temporary>
@@ -103,6 +113,14 @@
       <option name="presentableId" value="Default" />
       <updated>1586790285807</updated>
     </task>
+    <task id="LOCAL-00001" summary="local chrome driver added">
+      <created>1587318877700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587318877700</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="local chrome driver added" />
+    <option name="LAST_COMMIT_MESSAGE" value="local chrome driver added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="260" key="#Notifications" timestamp="1587227371156">
@@ -137,26 +157,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586790468674" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1587318581840">
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1587320829742">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1587318581840" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1587318581839">
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1587320829742" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1587320829741">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1587318581839" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1587318581838">
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1587320829741" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1587320829740">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586791377741" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1587318581838" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1587318581839">
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1587320829740" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1587320829741">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1587318581839" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1587320829741" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586790922619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
