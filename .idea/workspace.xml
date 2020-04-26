@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/umer-branch" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83904566-4956-4664-98e6-07c27339a8ad" name="Default Changelist" comment="" />
+    <list default="true" id="83904566-4956-4664-98e6-07c27339a8ad" name="Default Changelist" comment="local chrome driver added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/bo/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bo/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bo/DemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bo/DemoTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,21 +47,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1aUViOyz0E45bTF2piJ0E3NH91r" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="project.structure.last.edited" value="Project" />
@@ -47,7 +73,22 @@
       <recent name="C:\Users\alish\Downloads\maju\Testing and automation\project + asgns\demoblaze\src\test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DemoTest">
+    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoblaze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bo" />
+      <option name="MAIN_CLASS_NAME" value="bo.DemoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoTest.demotest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <extension name="coverage">
@@ -66,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTest" />
         <item itemvalue="JUnit.DemoTest.demotest" />
       </list>
     </recent_temporary>
@@ -81,32 +123,98 @@
       <option name="presentableId" value="Default" />
       <updated>1586790285807</updated>
     </task>
+    <task id="LOCAL-00001" summary="local chrome driver added">
+      <created>1587318877700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587318877700</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/umer-branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="local chrome driver added" />
+    <option name="LAST_COMMIT_MESSAGE" value="local chrome driver added" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="525" y="260" key="#Notifications" timestamp="1587227371156">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state x="525" y="260" key="#Notifications/0.23.1280.734@0.23.1280.734" timestamp="1587227371156" />
+    <state x="128" y="23" key="#Project_Structure" timestamp="1587301184986">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state x="128" y="23" key="#Project_Structure/0.23.1280.734@0.23.1280.734" timestamp="1587301184986" />
+    <state x="55" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587229157899">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state x="55" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.734@0.23.1280.734" timestamp="1587229157899" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1586790468674">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586790468674" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586791377742">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1587904065715">
+      <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586791377742">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1587904065715" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1587904065714">
+      <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586791377741">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1587904065714" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1587904065714">
+      <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586791377741" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586791377742">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1587904065714" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1587904065715">
+      <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586791377742" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1587904065715" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586790922619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586790922619" />
+    <state x="431" y="311" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587302102385">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state x="431" y="311" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.734@0.23.1280.734" timestamp="1587302102385" />
+    <state x="305" y="175" key="run.anything.popup" timestamp="1587316186802">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state x="305" y="175" key="run.anything.popup/0.23.1280.734@0.23.1280.734" timestamp="1587316186802" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demoblaze$DemoTest.ic" NAME="DemoTest Coverage Results" MODIFIED="1587902432850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>bo.*</FILTER>
+    </SUITE>
   </component>
 </project>

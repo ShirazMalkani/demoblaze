@@ -19,12 +19,11 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-@Slf4j
+@Slf4j // logging
 @SpringBootTest
 @Category(ShirazTest.class)
 @RunWith(SpringRunner.class)
 public class DemoTest {
-
     private static SeleniumConfig seleniumConfig;
 
     private static WebDriver driver;
