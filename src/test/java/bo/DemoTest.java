@@ -21,7 +21,6 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class DemoTest {
-
     private static SeleniumConfig seleniumConfig;
 
     private static WebDriver driver;
