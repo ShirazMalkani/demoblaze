@@ -23,12 +23,12 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 @Category(ShirazTest.class)
 @RunWith(SpringRunner.class)
-public class DemoTest {
+public class Login {
     private static SeleniumConfig seleniumConfig;
 
     private static WebDriver driver;
 
-    @Value("${url.login:https://www.demoblaze.com/}")
+    @Value("${url.login:https://www.ishopping.pk/}")
     private String loginUrl;
 
     //@Ignore

@@ -73,8 +73,8 @@
       <recent name="C:\Users\alish\Downloads\maju\Testing and automation\project + asgns\demoblaze\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTest">
-    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Login">
+    <configuration name="Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +83,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bo" />
-      <option name="MAIN_CLASS_NAME" value="bo.DemoTest" />
+      <option name="MAIN_CLASS_NAME" value="bo.Login" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoTest.demotest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Login.demotest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoblaze" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +98,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bo" />
-      <option name="MAIN_CLASS_NAME" value="bo.DemoTest" />
+      <option name="MAIN_CLASS_NAME" value="bo.Login" />
       <option name="METHOD_NAME" value="demotest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -107,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoTest" />
-        <item itemvalue="JUnit.DemoTest.demotest" />
+        <item itemvalue="JUnit.Login" />
+        <item itemvalue="JUnit.Login.demotest" />
       </list>
     </recent_temporary>
   </component>

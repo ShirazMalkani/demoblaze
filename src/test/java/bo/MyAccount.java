@@ -4,23 +4,20 @@ import configuration.SeleniumConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.*;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.ArrayList;
-
-import static org.junit.Assert.assertEquals;
 
 @Slf4j // logging
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class Home {
+public class MyAccount {
+
     private static SeleniumConfig seleniumConfig;
 
     private static WebDriver driver;
@@ -54,32 +51,32 @@ public class Home {
 
     //@Ignore
     @Test
-    public void NavBarContent() {
+    public void onClickAccountSettingsShouldOpenAccountSettingsPage() {
     }
 
     //@Ignore
     @Test
-    public void OnSuccessfulContentLoad() {
+    public void onClickShippingAddressesShouldOpenShippingAddressesPage() {
     }
 
     //@Ignore
     @Test
-    public void OnClickNavContent() {
+    public void onClickMyOrdersShouldOpenMyOrdersPage() {
     }
 
     //@Ignore
     @Test
-    public void OnAddToCart() {
+    public void onClickProductsReviewShouldOpenProductsReviewPage() {
     }
 
     //@Ignore
     @Test
-    public void OnOrderRequest() {
+    public void onClickWishListShouldOpenWishListPage() {
     }
 
     //@Ignore
     @Test
-    public void OnSearch() {
+    public void onClickLogoutShouldLogoutUser() {
     }
 
     @After

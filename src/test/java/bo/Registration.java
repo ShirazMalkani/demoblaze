@@ -4,23 +4,19 @@ import configuration.SeleniumConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.*;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.ArrayList;
-
-import static org.junit.Assert.assertEquals;
 
 @Slf4j // logging
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class Home {
+public class Registration {
     private static SeleniumConfig seleniumConfig;
 
     private static WebDriver driver;
@@ -54,32 +50,27 @@ public class Home {
 
     //@Ignore
     @Test
-    public void NavBarContent() {
+    public void fillingFormWithoutPasswordShouldGiveError() {
     }
 
     //@Ignore
     @Test
-    public void OnSuccessfulContentLoad() {
+    public void fillingFormWithoutFirstNameShouldGiveError() {
     }
 
     //@Ignore
     @Test
-    public void OnClickNavContent() {
+    public void fillingFormWithoutLastNameShouldGiveError() {
     }
 
     //@Ignore
     @Test
-    public void OnAddToCart() {
+    public void fillingFormWithoutEmailAddressShouldGiveError() {
     }
 
     //@Ignore
     @Test
-    public void OnOrderRequest() {
-    }
-
-    //@Ignore
-    @Test
-    public void OnSearch() {
+    public void passwordAndConfirmPasswordMismatchShouldGiveError() {
     }
 
     @After
