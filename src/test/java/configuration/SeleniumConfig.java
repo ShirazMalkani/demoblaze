@@ -26,19 +26,19 @@ public class SeleniumConfig {
                 .build();
 
         options = new ChromeOptions();
-        options.addArguments("--no-sandbox");                                           // Bypass OS security model, MUST BE THE VERY FIRST OPTION
+        options.addArguments("--no-sandbox");                                               // Bypass OS security model, MUST BE THE VERY FIRST OPTION
 
         // browser won't be opened
         // FOLLOWING SEVERE LEVEL LOG IS ALSO DUE TO THIS
         // [1584195551.689][SEVERE]: Timed out receiving message from renderer: 0.100
-//        options.addArguments("--headless");
+        // options.addArguments("--headless");
         options.setExperimentalOption("useAutomationExtension", false);
-//        options.addArguments("start-maximized");                                        // open Browser in maximized mode
-        options.addArguments("--disable-infobars");                                       // disabling infobars
-        options.addArguments("--disable-browser-side-navigation");                                       // disabling
-        options.addArguments("--disable-extensions");                                   // disabling extensions
-        options.addArguments("--disable-gpu");                                          // applicable to windows os only
-        options.addArguments("--disable-dev-shm-usage");                                // overcome limited resource problems
+        // options.addArguments("start-maximized");                                         // open Browser in maximized mode
+        options.addArguments("--disable-infobars");                                         // disabling infobars
+        options.addArguments("--disable-browser-side-navigation");                          // disabling
+        options.addArguments("--disable-extensions");                                       // disabling extensions
+        options.addArguments("--disable-gpu");                                              // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage");                                    // overcome limited resource problems
     }
 
     public void setupDriver() {
@@ -48,7 +48,7 @@ public class SeleniumConfig {
 
     static {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
-//        System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));
+        // System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));           // used for firefox browser
     }
 
     static private String findFile(String filename) {
