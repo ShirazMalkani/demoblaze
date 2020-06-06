@@ -1,0 +1,9 @@
+currentEmailAddress,currentPassword,firstname,lastname,emailAddress,changePassword,password,updatedPassword,confirmedUpdatedPassword,locator,locatorValue,expectedOutput
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,false,,,,className,success-msg,The account information has been saved.
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,true,,,,id,advice-required-entry-current_password,This is a required field.
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,true,shirazatdsu@gmail.com,,,id,advice-required-entry-password,This is a required field.
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,true,shirazatdsu@gmail.com,thisisnewpassword,,id,advice-validate-cpassword-confirmation,Please make sure your passwords match.
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,true,wrongPassword,thisisnewpassword,thisisnewpassword,className,error-msg,Invalid current password
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,Shiraz,Hussain,shirazatdsu@gmail.com,true,shirazatdsu@gmail.com,thisisnewpassword,thisisnewpassword,className,success-msg,The account information has been saved.
+shirazatdsu@gmail.com,thisisnewpassword,Shirzaz,Malkani,shiraz.malkani@dsu.edu.pk,false,,,,className,success-msg,The account information has been saved.
+shiraz.malkani@dsu.edu.pk,thisisnewpassword,Shiraz,Malkani,shirazatdsu@gmail.com,true,thisisnewpassword,shirazatdsu@gmail.com,shirazatdsu@gmail.com,className,success-msg,The account information has been saved.

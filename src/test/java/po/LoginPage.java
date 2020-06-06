@@ -1,17 +1,13 @@
 package po;
 
-import locator.LoginPageLocator;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import locator.BasePageLocator;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
-    private final LoginPageLocator locator;
     private final String url = "https://www.ishopping.pk/customer/account/login";
 
-    public LoginPage(LoginPageLocator locator) {
-        this.locator = locator;
+    public LoginPage(BasePageLocator locator) {
+        super(locator);
     }
 
     public void navigate() {
@@ -24,12 +20,4 @@ public class LoginPage {
         this.locator.setValue("login", null);
     }
 
-    // by = className, value = "hello" -> successful login case
-    public WebElement getLoginResult(String by, String value) throws Exception {
-        return this.locator.getValue(by, value);
-    }
-
-    public void logout() {
-        this.locator.logout();
-    }
 }

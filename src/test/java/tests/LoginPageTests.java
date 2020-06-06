@@ -1,6 +1,6 @@
 package tests;
 
-import configuration.NewSeleniumConfig;
+import configuration.UserWebDriver;
 import dal.ShirazTest;
 import locator.LoginPageLocator;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,7 @@ public class LoginPageTests {
 
     static {
         try {
-            loginPage = new LoginPage(new LoginPageLocator((new NewSeleniumConfig()).driver()));
+            loginPage = new LoginPage(new LoginPageLocator(UserWebDriver.getInstance("chrome")));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -30,8 +30,8 @@ public class LoginPageTests {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/login.csv", numLinesToSkip = 1)
-    public void validLoginTest(String username, String password, String locator,
-                               String locatorValue, String expected, Boolean isSuccessfulLogin) throws Exception {
+    public void loginTest(String username, String password, String locator,
+                          String locatorValue, String expected, Boolean isSuccessfulLogin) throws Exception {
         log.info("Running test Login with username {} and password {}", username, password);
 
         if(null == username) {
@@ -43,7 +43,7 @@ public class LoginPageTests {
 
         this.loginPage.navigate();
         this.loginPage.login(username, password);
-        WebElement loginResult = this.loginPage.getLoginResult(locator, locatorValue);
+        WebElement loginResult = this.loginPage.getResult(locator, locatorValue);
 
         assertEquals(expected, loginResult.getText());
 

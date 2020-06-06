@@ -2,23 +2,14 @@ package locator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
 
-public class LoginPageLocator {
-
-    private final WebDriver browser;
+public class LoginPageLocator extends BasePageLocator{
 
     public LoginPageLocator(WebDriver browser) {
-        this.browser = browser;
+        super(browser);
     }
 
-    public void navigate(String url) {
-        this.browser.navigate().to(url);
-    }
-
+    @Override
     public void setValue(String element, String value) throws Exception {
         switch (element) {
             case "username" :
@@ -33,29 +24,5 @@ public class LoginPageLocator {
             default:
                 throw new Exception("Not implemented exception for element option " + element);
         }
-    }
-
-    public WebElement getValue(String by, String value) throws Exception {
-        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(20));
-        switch (by) {
-            case "id":
-                return wait.until(ExpectedConditions.presenceOfElementLocated(By.id(value)));
-            case "className":
-                return wait.until(ExpectedConditions.presenceOfElementLocated(By.className(value)));
-            case "name":
-                return wait.until(ExpectedConditions.presenceOfElementLocated(By.name(value)));
-            case "xpath":
-                return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(value)));
-            default:
-                throw new Exception("Not implemented exception for by option " + by);
-        }
-    }
-
-    private WebElement locate(By type) {
-        return this.browser.findElement(type);
-    }
-
-    public void logout() {
-        locate(new By.ByLinkText("Log Out")).click();
     }
 }
