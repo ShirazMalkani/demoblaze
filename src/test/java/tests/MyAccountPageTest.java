@@ -14,11 +14,12 @@ import po.MyAccountPage;
 
 import java.io.IOException;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 @Slf4j
 @Category(ShirazTest.class)
-public class MyAccountPageTest {
+public class MyAccountPageTest extends BaseTest {
 
     private static MyAccountPage myAccountPage;
 
@@ -33,7 +34,7 @@ public class MyAccountPageTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/myaccount.csv", numLinesToSkip = 1)
     public void myAccountSettingsUpdateTest(@AggregateWith(MyAccountAggregator.class) MyAccountBo myAccountBo) throws Exception {
-        log.info("Running myAccountSettingsUpdateTest with data " + myAccountBo.toString());
+        log.info("Running myAccountSettingsUpdateTest with data {}", myAccountBo.toString());
 
         // todo: move login and logout from test case level to class level
         this.myAccountPage.login(myAccountBo.getCurrentEmailAddress(), myAccountBo.getCurrentPassword());

@@ -10,6 +10,7 @@ public class LoginPage extends BasePage {
         super(locator);
     }
 
+    @Override
     public void navigate() {
         this.locator.navigate(url);
     }

@@ -1,0 +1,6 @@
+firstname,lastname,emailAddress,password,confirmPassword,signupForNewsletter,locator,locatorValue,expectedOutput
+Shiraz,Malkani,fa18mscs0048@maju.edu.pk,password,confirmPassword,false,id,advice-validate-cpassword-confirmation,Please make sure your passwords match.
+Shiraz,Malkani,fa18mscs0048@maju.edu.pk,,,false,id,advice-required-entry-password,This is a required field.
+Shiraz,Malkani,fa18mscs0048@maju.edu.pk,password,,false,id,advice-required-entry-confirmation,This is a required field.
+Shiraz,Malkani,,password,password,false,id,advice-required-entry-email_address,This is a required field.
+

@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 
 @Slf4j
 @Category(ShirazTest.class)
-public class LoginPageTests {
+public class LoginPageTest extends BaseTest {
 
     private static LoginPage loginPage;
 

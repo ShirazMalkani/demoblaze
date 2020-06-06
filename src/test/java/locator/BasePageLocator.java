@@ -51,4 +51,8 @@ public class BasePageLocator {
     public void logout() {
         locate(new By.ByLinkText("Log Out")).click();
     }
+
+    public void closeBrowser() {
+        browser.quit();
+    }
 }

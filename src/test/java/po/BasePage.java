@@ -11,6 +11,8 @@ public class BasePage {
         this.locator = locator;
     }
 
+    public void navigate() throws Exception {}
+
     // by = className, value = "hello" -> successful login case
     public WebElement getResult(String by, String value) throws Exception {
         return this.locator.getValue(by, value);
@@ -21,6 +23,10 @@ public class BasePage {
     }
 
     public void login(String emailAddress, String password) throws Exception {
-        locator.login(emailAddress, password);
+        this.locator.login(emailAddress, password);
+    }
+
+    public void closeBrowser() {
+        this.locator.closeBrowser();
     }
 }

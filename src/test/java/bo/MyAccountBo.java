@@ -6,7 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class MyAccountBo {
-
     private String currentEmailAddress;
     private String currentPassword;
     private String firstname;

@@ -5,9 +5,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class MyAccountPageLocator extends BasePageLocator{
+public class RegistrationPageLocator extends BasePageLocator{
 
-    public MyAccountPageLocator(WebDriver browser) {
+    public RegistrationPageLocator(WebDriver browser) {
         super(browser);
     }
 
@@ -29,33 +29,26 @@ public class MyAccountPageLocator extends BasePageLocator{
                 webElement.sendKeys(value);
                 break;
             case "email":
-                webElement = locate(new By.ById("email"));
+                webElement = locate(new By.ById("email_address"));
                 webElement.clear();
                 webElement.sendKeys(value);
                 break;
-            case "change_password":
-                locate(new By.ById("change_password")).sendKeys(Keys.SPACE);
-                break;
-            case "current_password":
-                webElement = locate(new By.ById("current_password"));
-                webElement.clear();
-                webElement.sendKeys(value);
-                break;
-            case "new_password":
+            case "password":
                 webElement = locate(new By.ById("password"));
                 webElement.clear();
                 webElement.sendKeys(value);
                 break;
-            case "confirm_new_password":
+            case "confirmPassword":
                 webElement = locate(new By.ById("confirmation"));
                 webElement.clear();
                 webElement.sendKeys(value);
                 break;
-            case "save":
-                locate(new By.ByXPath("//span[.='Save']")).click();
+            case "news_letter_subscribe":
+                webElement = locate(new By.ById("is_subscribed"));
+                webElement.sendKeys(Keys.SPACE);
                 break;
-            case "account_settings":
-                locate(new By.ByClassName("navigation-account_edit")).click();
+            case "register":
+                locate(new By.ByXPath("//span[.='Register']")).click();
                 break;
             default:
                 throw new Exception("Not implemented exception for element option " + element);
