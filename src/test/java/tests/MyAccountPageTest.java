@@ -35,6 +35,7 @@ public class MyAccountPageTest {
     public void myAccountSettingsUpdateTest(@AggregateWith(MyAccountAggregator.class) MyAccountBo myAccountBo) throws Exception {
         log.info("Running myAccountSettingsUpdateTest with data " + myAccountBo.toString());
 
+        // todo: move login and logout from test case level to class level
         this.myAccountPage.login(myAccountBo.getCurrentEmailAddress(), myAccountBo.getCurrentPassword());
 
         this.myAccountPage.navigate();
