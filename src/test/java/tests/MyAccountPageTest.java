@@ -2,15 +2,15 @@ package tests;
 
 import bo.MyAccountBo;
 import configuration.UserWebDriver;
-import dal.ShirazTest;
 import locator.MyAccountPageLocator;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.experimental.categories.Category;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.aggregator.AggregateWith;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.WebElement;
 import po.MyAccountPage;
+import utilities.MyAccountAggregator;
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 @Slf4j
-@Category(ShirazTest.class)
+@Tag("MyAccount")
 public class MyAccountPageTest extends BaseTest {
 
     private static MyAccountPage myAccountPage;

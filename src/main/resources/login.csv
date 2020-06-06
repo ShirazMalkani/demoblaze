@@ -1,7 +1,7 @@
-username,password,locator,locatorValue,expected,isSuccessfulLogin
-shirazatdsu@gmail.com,shirazatdsu@gmail.com,className,hello,"Hello, Shiraz Malkani!",TRUE
-,shirazatdsu@gmail.com,id,advice-required-entry-account_al_auth_login_email,This is a required field.,FALSE
-shirazatdsu@gmail.com,,id,advice-required-entry-account_al_auth_login_password,This is a required field.,FALSE
-abc,shirazatdsu@gmail.com,id,advice-validate-email-account_al_auth_login_email,Please enter a valid email address. For example johndoe@domain.com.,FALSE
-shirazatdsu@gmail.com,abc,id,advice-validate-password-account_al_auth_login_password,Please enter 6 or more characters. Leading or trailing spaces will be ignored.,FALSE
-abc@def.ghi,shirazatdsu@gmail.com,xpath,//*[@class='error-msg']/ul/li,Invalid login or password.,FALSE
+username,password,isSuccessfulLogin,locator,locatorValue,expected
+shirazatdsu@gmail.com,shirazatdsu@gmail.com,true,className,hello,"Hello, Shiraz Malkani!"
+,shirazatdsu@gmail.com,false,id,advice-required-entry-account_al_auth_login_email,This is a required field.
+shirazatdsu@gmail.com,,false,id,advice-required-entry-account_al_auth_login_password,This is a required field.
+abc,shirazatdsu@gmail.com,false,id,advice-validate-email-account_al_auth_login_email,Please enter a valid email address. For example johndoe@domain.com.
+shirazatdsu@gmail.com,abc,false,id,advice-validate-password-account_al_auth_login_password,Please enter 6 or more characters. Leading or trailing spaces will be ignored.
+abc@def.ghi,shirazatdsu@gmail.com,false,xpath,//*[@class='error-msg']/ul/li,Invalid login or password.

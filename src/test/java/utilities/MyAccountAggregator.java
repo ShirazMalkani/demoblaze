@@ -1,4 +1,4 @@
-package tests;
+package utilities;
 
 import bo.MyAccountBo;
 import org.junit.jupiter.api.extension.ParameterContext;
