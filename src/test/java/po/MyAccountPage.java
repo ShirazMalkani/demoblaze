@@ -22,7 +22,7 @@ public class MyAccountPage extends BasePage {
         this.locator.setValue("lastname", myAccountBo.getLastname());
         this.locator.setValue("email", myAccountBo.getEmailAddress());
 
-        if(myAccountBo.getChangePassword().equals("true")) {
+        if (myAccountBo.getChangePassword().equals("true")) {
             this.locator.setValue("change_password", null);
             this.locator.setValue("current_password", myAccountBo.getPassword());
             this.locator.setValue("new_password", myAccountBo.getUpdatedPassword());

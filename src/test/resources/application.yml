@@ -1,8 +1,8 @@
-spring:
-  application:
-    name: shafarm
-  server:
-    port: 8080
+#spring:
+#  application:
+#    name: shafarm
+#  server:
+#    port: 8080
 
 login:
   username: ShirazMalkani

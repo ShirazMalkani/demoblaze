@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class MyAccountPageLocator extends BasePageLocator{
+public class MyAccountPageLocator extends BasePageLocator {
 
     public MyAccountPageLocator(WebDriver browser) {
         super(browser);
@@ -13,7 +13,7 @@ public class MyAccountPageLocator extends BasePageLocator{
 
     @Override
     public void setValue(String element, String value) throws Exception {
-        if(null == value) {
+        if (null == value) {
             value = "";
         }
         WebElement webElement = null;

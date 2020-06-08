@@ -1,19 +1,25 @@
 package configuration;
 
 import lombok.Getter;
-import java.io.File;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 @Getter
 public class SeleniumConfig {
 
     private static String driverFile;
+
+    static {
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        // System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));           // used for firefox browser
+    }
+
     private ChromeDriverService service;
     private ChromeOptions options;
     private WebDriver driver;
@@ -41,16 +47,6 @@ public class SeleniumConfig {
         options.addArguments("--disable-dev-shm-usage");                                    // overcome limited resource problems
     }
 
-    public void setupDriver() {
-        this.driver = new ChromeDriver(service, options);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-    }
-
-    static {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        // System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));           // used for firefox browser
-    }
-
     static private String findFile(String filename) {
         String[] paths = {"/home/shiraz/Documents/maju - spring 2020/Testing/", "bin/", "target/classes"};
         for (String path : paths) {
@@ -58,5 +54,10 @@ public class SeleniumConfig {
                 return path + filename;
         }
         return "";
+    }
+
+    public void setupDriver() {
+        this.driver = new ChromeDriver(service, options);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 }

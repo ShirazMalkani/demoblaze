@@ -12,7 +12,7 @@ public class RegistrationBo {
     private String password;
     private String confirmPassword;
     private String signupForNewsletter;
-    protected String locator;
-    protected String locatorValue;
-    protected String expectedOutput;
+    private String locator;
+    private String locatorValue;
+    private String expectedOutput;
 }

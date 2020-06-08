@@ -24,7 +24,7 @@ public class RegistrationPage extends BasePage {
         this.locator.setValue("password", registrationBo.getPassword());
         this.locator.setValue("confirmPassword", registrationBo.getConfirmPassword());
 
-        if(registrationBo.getSignupForNewsletter().equals("true")) {
+        if (registrationBo.getSignupForNewsletter().equals("true")) {
             this.locator.setValue("news_letter_subscribe", null);
         }
         this.locator.setValue("register", null);

@@ -35,10 +35,10 @@ public class LoginPageTest extends BaseTest {
     public void loginTest(@AggregateWith(LoginAggregator.class) LoginBo loginBo) throws Exception {
         log.info("Running test Login with data {}", loginBo.toString());
 
-        if(null == loginBo.getUsername()) {
+        if (null == loginBo.getUsername()) {
             loginBo.setUsername("");
         }
-        if(null == loginBo.getPassword()) {
+        if (null == loginBo.getPassword()) {
             loginBo.setPassword("");
         }
 
@@ -48,7 +48,7 @@ public class LoginPageTest extends BaseTest {
 
         assertEquals(loginBo.getExpected(), loginResult.getText());
 
-        if(loginBo.getIsSuccessfulLogin().equals("true"))
+        if (loginBo.getIsSuccessfulLogin().equals("true"))
             this.loginPage.logout();
     }
 }

@@ -12,7 +12,8 @@ import java.util.concurrent.TimeUnit;
 public class UserWebDriver {
     private static WebDriver driver = null;
 
-    private UserWebDriver() {}
+    private UserWebDriver() {
+    }
 
     public static WebDriver getInstance(String webDriverType) throws IOException {
         if (webDriverType.equals("chrome")) {
@@ -35,7 +36,7 @@ public class UserWebDriver {
                     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
                 }
             }
-        } else if(webDriverType.equals("firefox")){
+        } else if (webDriverType.equals("firefox")) {
             // todo: implement driver details for firefox
         }
         return driver;

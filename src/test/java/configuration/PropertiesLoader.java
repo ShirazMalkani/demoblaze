@@ -12,7 +12,7 @@ public class PropertiesLoader {
                 .getClassLoader()
                 .getResourceAsStream(resourceFileName);
 
-        if(null != inputStream) {
+        if (null != inputStream) {
             configuration.load(inputStream);
             inputStream.close();
         }
